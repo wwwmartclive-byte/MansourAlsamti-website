@@ -229,15 +229,7 @@ footer p{
 <li>حفرة جهنم — MBC & Shahid Studio AlSadaf (In Production)</li>
 </ul>
 
-<!-- صور المشاريع من 1 إلى 5 -->
-<div class="project-images">
-  <img src="images/1.jpg" alt="Project Image 1">
-  <img src="images/2.jpg" alt="Project Image 2">
-  <img src="images/3.jpg" alt="Project Image 3">
-  <img src="images/4.jpg" alt="Project Image 4">
-  <img src="images/5.jpg" alt="Project Image 5">
-</div>
-</section>
+
 
 <!-- MOOD -->
 <section class="mood">

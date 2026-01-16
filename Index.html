@@ -73,37 +73,32 @@ li{margin-bottom:10px;}
 .job h4{margin:0;font-size:18px;}
 .job span{color:#aaa;font-size:14px;}
 
-/* ===== PROJECT IMAGES GRID ===== */
-.project-images{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap:20px;
-  margin-top:30px;
-}
-.project-images img{
+/* ===== PROJECT IMAGE ===== */
+.project-image{
   width:100%;
+  max-width:600px;
+  margin:30px auto;
   border-radius:6px;
+  display:block;
 }
 
 /* ===== ART ===== */
-.art{
-  display:grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap:20px;
-  margin-top:30px;
-}
 .art img{
   width:100%;
+  max-width:600px;
+  margin:30px auto;
   border-radius:6px;
+  display:block;
 }
 
-/* ===== MOOD ===== */
+/* ===== MOOD / MALCOLM ===== */
 .mood{
   background:
     linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
     url("malcolm.jpg") center/cover no-repeat;
   text-align:center;
   color:#fff;
+  padding:70px 20px;
 }
 
 /* ===== FOOTER ===== */
@@ -203,55 +198,11 @@ footer p{
 </div>
 </section>
 
-<!-- PROJECTS -->
+<!-- PROJECT HIGHLIGHT -->
 <section>
-<h3>Projects (2024–2025)</h3>
-<ul>
-<li>The Moaabal — Riyadh Theatre Festival (Music)</li>
-<li>Al-Sharbaqi — Theatre Festival (Music & Sound)</li>
-<li>ITHRA — Video Game Sound & Music</li>
-<li>NA ZH Animation — Ministry of Culture</li>
-<li>Short Film — MBC & Sadaf</li>
-<li>Salem’s Diary — Sim Siora Film</li>
-<li>Karate Series — MBC & ALSadaf (Shahid)</li>
-<li>حفرة جهنم — MBC & Shahid Studio AlSadaf (In Production)</li>
-</ul>
-
-<!-- صور المشاريع -->
-<div class="project-images">
-  <img src="profile.jpg" alt="Project Image 1">
-  <img src="art.jpg" alt="Project Image 2">
-  <img src="malcolm.jpg" alt="Project Image 3">
-</div>
-</section>
-
-<!-- MOOD -->
-<section class="mood">
-<h3>Sound as Identity</h3>
-<p>
-Night spaces, silence, neon lights, and tension.<br>
-Sound is not background — it is narrative, character, and memory.
-</p>
-</section>
-
-<!-- EDUCATION -->
-<section>
-<h3>Education & Training</h3>
-<ul>
-<li>Diploma — Secretarial Studies — Institute of Public Administration</li>
-<li>Diploma — Film Production — MBC Academy</li>
-<li>Diploma — Sound Design & Production Management — Misk</li>
-<li>Complete Cinematic Production & Entertainment Training (2024–2025)</li>
-</ul>
-</section>
-
-<!-- AWARDS -->
-<section>
-<h3>Awards</h3>
-<ul>
-<li>Best National Saudi Day Production</li>
-<li>Best Theatrical Music — Saudi Theatre Festival</li>
-</ul>
+<h3>Project Highlight</h3>
+<p>حفرة جهنم — MBC & Shahid Studio AlSadaf (In Production)</p>
+<img class="project-image" src="malcolm.jpg" alt="Malcolm X Project Highlight">
 </section>
 
 <!-- ART -->
@@ -263,12 +214,6 @@ Sound is not background — it is narrative, character, and memory.
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-images">
-    <img src="profile.jpg" alt="Project Image 1">
-    <img src="art.jpg" alt="Project Image 2">
-    <img src="malcolm.jpg" alt="Project Image 3">
-  </div>
-
   <a href="https://linktr.ee/mansour.art.center" target="_blank">Connect Me</a>
   <p>© Mansour Ahmed Alsamti</p>
 </footer>

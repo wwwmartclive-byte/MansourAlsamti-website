@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Mansour Ahmed Alsamti | Cinematic Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b0b0b;
+  color:#f2f2f2;
+  line-height:1.7;
+}
+
+/* ===== HERO ===== */
+.hero-bg{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
+    url("https://images.pexels.com/photos/1111319/pexels-photo-1111319.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.hero{
+  display:flex;
+  gap:50px;
+  max-width:1100px;
+  padding:40px;
+  align-items:center;
+}
+.hero img{
+  width:260px;
+  filter:grayscale(100%);
+  border-radius:6px;
+}
+.hero-text h1{
+  margin:0;
+  font-size:48px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#ff3c3c;
+}
+.hero-text h2{
+  font-weight:normal;
+  font-size:18px;
+  color:#ccc;
+  margin-top:15px;
+}
+
+/* ===== SECTIONS ===== */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+  border-bottom:1px solid #1f1f1f;
+}
+h3{
+  color:#ff3c3c;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:25px;
+  font-size:24px;
+}
+p{color:#ddd;margin-bottom:15px;}
+ul{padding-left:20px;}
+li{margin-bottom:10px;}
+
+/* ===== EXPERIENCE ===== */
+.job{margin-bottom:40px;}
+.job h4{margin:0;font-size:18px;}
+.job span{color:#aaa;font-size:14px;}
+
+/* ===== PROJECT IMAGES GRID ===== */
+.project-images{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.project-images img{
+  width:100%;
+  border-radius:6px;
+}
+
+/* ===== ART ===== */
+.art{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap:20px;
+  margin-top:30px;
+}
+.art img{
+  width:100%;
+  border-radius:6px;
+}
+
+/* ===== MOOD ===== */
+.mood{
+  background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+    url("https://images.pexels.com/photos/1015563/pexels-photo-1015563.jpeg?auto=compress&cs=tinysrgb&w=1600") center/cover no-repeat;
+  text-align:center;
+  color:#fff;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#080808;
+  padding:50px 20px;
+  text-align:center;
+}
+footer a{
+  color:#ff3c3c;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer p{
+  color:#777;
+  font-size:14px;
+  margin-top:10px;
+}
+
+/* شبكة الصور في الفوتر */
+.footer-images{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
+  gap:15px;
+  margin-bottom:20px;
+}
+.footer-images img{
+  width:100%;
+  border-radius:6px;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero img{
+    width:220px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero-bg">
+  <div class="hero">
+    <img src="https://images.pexels.com/photos/277455/pexels-photo-277455.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Mansour Ahmed Alsamti">
+    <div class="hero-text">
+      <h1>MANSOUR AHMED ALSAMTI</h1>
+      <h2>
+        Project Manager | Studio Manager | Sound Designer | Production<br>
+        Talent Management | Business Operations & Creative Development
+      </h2>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h3>About</h3>
+<p>A multidisciplinary professional with 15+ years of experience across project management, studio operations, sound design, training leadership, business administration, exhibitions, product development, and entertainment production.</p>
+<p>Career spanning exhibitions, education & training, pharmaceuticals, insurance, tourism, and entertainment.</p>
+<p>Expert in building operational systems, leading creative teams, managing complex productions, and delivering high-quality sound and artistic output.</p>
+</section>
+
+<!-- EXPERIENCE -->
+<section>
+<h3>Experience</h3>
+
+<div class="job">
+<h4>Studio Manager & Lead Sound System Designer</h4>
+<span>3 Arts Studio | 2023</span>
+<ul>
+<li>Designed and implemented full recording, sound, and music production systems</li>
+<li>Managed studio operations, acoustics, scheduling, and workflows</li>
+<li>Supervised artists, engineers, and production teams</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>General Manager & Sound Engineer</h4>
+<span>Arts Center Talent & Production | 2021</span>
+<ul>
+<li>Led audio and production divisions</li>
+<li>Oversaw recording, mixing, mastering, and restoration</li>
+<li>Managed talent and equipment pipelines</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Development Manager</h4>
+<span>Join Me Destination Management | 2018–2021</span>
+<ul>
+<li>Developed tourism and entertainment experiences</li>
+<li>Managed partnerships, logistics, and event operations</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Claims & Fraud Specialist</h4>
+<span>Al Rajhi Takaful Insurance | 2018–2021</span>
+<ul>
+<li>Processed claims and compliance reports</li>
+<li>Identified and escalated fraud indicators</li>
+</ul>
+</div>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h3>Projects (2024–2025)</h3>
+<ul>
+<li>The Moaabal — Riyadh Theatre Festival (Music)</li>
+<li>Al-Sharbaqi — Theatre Festival (Music & Sound)</li>
+<li>ITHRA — Video Game Sound & Music</li>
+<li>NA ZH Animation — Ministry of Culture</li>
+<li>Short Film — MBC & Sadaf</li>
+<li>Salem’s Diary — Sim Siora Film</li>
+<li>Karate Series — MBC & ALSadaf (Shahid)</li>
+<li>حفرة جهنم — MBC & Shahid Studio AlSadaf (In Production)</li>
+</ul>
+
+<!-- صور المشاريع من الإنترنت -->
+<div class="project-images">
+  <img src="https://images.pexels.com/photos/1109543/pexels-photo-1109543.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 1">
+  <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 2">
+  <img src="https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 3">
+  <img src="https://images.pexels.com/photos/296894/pexels-photo-296894.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 4">
+  <img src="https://images.pexels.com/photos/3825584/pexels-photo-3825584.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 5">
+</div>
+</section>
+
+<!-- MOOD -->
+<section class="mood">
+<h3>Sound as Identity</h3>
+<p>
+Night spaces, silence, neon lights, and tension.<br>
+Sound is not background — it is narrative, character, and memory.
+</p>
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h3>Education & Training</h3>
+<ul>
+<li>Diploma — Secretarial Studies — Institute of Public Administration</li>
+<li>Diploma — Film Production — MBC Academy</li>
+<li>Diploma — Sound Design & Production Management — Misk</li>
+<li>Complete Cinematic Production & Entertainment Training (2024–2025)</li>
+</ul>
+</section>
+
+<!-- AWARDS -->
+<section>
+<h3>Awards</h3>
+<ul>
+<li>Best National Saudi Day Production</li>
+<li>Best Theatrical Music — Saudi Theatre Festival</li>
+</ul>
+</section>
+
+<!-- ART -->
+<section class="art">
+<h3>Art Identity</h3>
+<p>I'm not just producing sound — I’m shaping emotion.</p>
+<img src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Art Image">
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <!-- شبكة الصور أسفل الفوتر من الإنترنت -->
+  <div class="footer-images">
+    <img src="https://images.pexels.com/photos/1109543/pexels-photo-1109543.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 1">
+    <img src="https://images.pexels.com/photos/1117132/pexels-photo-1117132.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 2">
+    <img src="https://images.pexels.com/photos/274937/pexels-photo-274937.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 3">
+    <img src="https://images.pexels.com/photos/296894/pexels-photo-296894.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 4">
+    <img src="https://images.pexels.com/photos/3825584/pexels-photo-3825584.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Project Image 5">
+  </div>
+
+  <a href="https://linktr.ee/mansour.art.center" target="_blank">Connect Me</a>
+  <p>© Mansour Ahmed Alsamti</p>
+</footer>
+
+</body>
+</html>

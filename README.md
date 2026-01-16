@@ -275,16 +275,6 @@ Sound is not background — it is narrative, character, and memory.
 <img src="art.jpg" alt="I'm ART">
 </section>
 
-<!-- FOOTER -->
-<footer>
-  <!-- شبكة الصور أسفل الفوتر من 1 إلى 5 -->
-  <div class="footer-images">
-    <img src="images/1.jpg" alt="Project Image 1">
-    <img src="images/2.jpg" alt="Project Image 2">
-    <img src="images/3.jpg" alt="Project Image 3">
-    <img src="images/4.jpg" alt="Project Image 4">
-    <img src="images/5.jpg" alt="Project Image 5">
-  </div>
 
   <a href="https://linktr.ee/mansour.art.center" target="_blank">Connect Me</a>
   <p>© Mansour Ahmed Alsamti</p>

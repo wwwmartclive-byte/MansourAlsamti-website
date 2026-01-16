@@ -1,145 +1,142 @@
-
-
-
-
-
-
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>MARTC | Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mansour Art & Media Center</title>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
-
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #ffffff;
-      color: #222;
-      text-align: center;
-    } 
-
-    header {
-      background: #111;
-      color: #fff;
-      padding: 40px 20px;
-    } 
-
-    section {
-      padding: 50px 20px;
-    } 
-
-    h1, h2 {
-      margin-bottom: 20px;
-    } 
-
-    a {
-      text-decoration: none;
-    } 
-
-    /* Contact */
-    .contact a {
-      display: block;
-      margin: 12px 0;
-      font-size: 18px;
-      color: #222;
-    } 
-
-    .social-icons a {
-      margin: 0 12px;
-      font-size: 28px;
-    } 
-
-    footer {
-      background: #f5f5f5;
-      padding: 20px;
-      font-size: 14px;
-    } 
-
-    /* WhatsApp floating */
-    .whatsapp-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      width: 60px;
-      height: 60px;
-      border-radius: 50%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 30px;
-      color: #fff;
-      box-shadow: 0 4px 8px rgba(0,0,0,.3);
-      z-index: 999;
-    } 
-
-    .whatsapp-float:hover {
-      transform: scale(1.1);
-    }
-  </style>
-</head> 
-
-<body> 
-
-<header>
-  <h1>MARTC</h1>
-  <p>Creative Portfolio</p>
-</header> 
-
-<section>
-  <h2>About</h2>
-  <p>
-    Creative media & content platform.<br>
-    Writing – Development – Visual storytelling.
-  </p>
-</section> 
-
-<section class="contact" id="contact">
-  <h2>Contact</h2> 
-
-  <a href="mailto:mansour@martc.live">
-    <i class="fa-solid fa-envelope"></i>
-    mansour@martc.live
-  </a> 
-
-  <a href="https://wa.me/966508122281" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-    +966 50 812 2281
-  </a> 
-
-  <a href="https://www.martc.live" target="_blank">
-    <i class="fa-solid fa-globe"></i>
-    www.martc.live
-  </a> 
-
-  <div class="social-icons" style="margin-top:25px;">
-    <a href="https://linktr.ee/mansour.art.center" target="_blank" title="All My Links">
-      <i class="fa-solid fa-link"></i>
-    </a>
-  </div>
-</section> 
-
-<footer>
-  © 2026 MARTC – All Rights Reserved
-</footer> 
-
-<!-- WhatsApp Button -->
-<a href="https://wa.me/966508122281" class="whatsapp-float" target="_blank">
-  <i class="fa-brands fa-whatsapp"></i>
-</a> 
-
-</body>
-</html>      box-shadow: 0 4px 8px rgba(0,0,0,.3);
-      z-index: 999;
+  <style>
+    :root {
+      --main: #111;
+      --accent: #c59d5f;
+      --bg: #f5f5f5;
+      --white: #ffffff;
     }
 
-    .whatsapp-float:hover {
-      transform: scale(1.1);
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Tahoma", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--main);
+      line-height: 1.8;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000, #222);
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    nav {
+      margin-top: 30px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+      color: var(--accent);
+    }
+
+    .card {
+      background: var(--white);
+      padding: 30px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    ul li::before {
+      content: "✔";
+      margin-left: 10px;
+      color: var(--accent);
+    }
+
+    .portfolio {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .portfolio-item {
+      background: var(--white);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .portfolio-item h3 {
+      margin-bottom: 10px;
+      color: var(--main);
+    }
+
+    .contact a {
+      display: block;
+      margin: 10px 0;
+      text-decoration: none;
+      color: var(--main);
+      font-weight: bold;
+    }
+
+    .contact a span {
+      color: var(--accent);
+    }
+
+    footer {
+      background: #000;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 32px;
+      }
     }
   </style>
 </head>
@@ -147,51 +144,97 @@
 <body>
 
 <header>
-  <h1>MARTC</h1>
-  <p>Creative Portfolio</p>
+  <h1>Mansour Art & Media Center</h1>
+  <p>إدارة مشاريع • إنتاج إعلامي • توجيه إبداعي</p>
+
+  <nav>
+    <a href="#about">من نحن</a>
+    <a href="#services">الخدمات</a>
+    <a href="#portfolio">الأعمال</a>
+    <a href="#contact">التواصل</a>
+  </nav>
 </header>
 
-<section>
-  <h2>About</h2>
-  <p>
-    Creative media & content platform.<br>
-    Writing – Development – Visual storytelling.
-  </p>
+<section id="about">
+  <h2>من نحن</h2>
+  <div class="card">
+    <p>
+      مركز منصور للفنون والإعلام هو منصة إبداعية متخصصة في إدارة المشاريع،
+      الإنتاج الإعلامي، والتطوير الفني. نعمل بخبرة طويلة على تحويل الأفكار
+      إلى أعمال احترافية ذات قيمة فنية وسوقية.
+    </p>
+  </div>
 </section>
 
-<section class="contact" id="contact">
-  <h2>Contact</h2>
+<section id="services">
+  <h2>الخدمات</h2>
+  <div class="card">
+    <ul>
+      <li>إدارة المشاريع الفنية والإعلامية</li>
+      <li>إنتاج الأفلام والمسلسلات</li>
+      <li>إدارة الاستوديوهات</li>
+      <li>التطوير الدرامي وكتابة المحتوى</li>
+      <li>الإشراف الفني والتوجيهي</li>
+    </ul>
+  </div>
+</section>
 
-  <a href="mailto:mansour@martc.live">
-    <i class="fa-solid fa-envelope"></i>
-    mansour@martc.live
-  </a>
+<section id="portfolio">
+  <h2>الأعمال</h2>
 
-  <a href="https://wa.me/966508122281" target="_blank">
-    <i class="fa-brands fa-whatsapp"></i>
-    +966 50 812 2281
-  </a>
+  <div class="portfolio">
+    <div class="portfolio-item">
+      <h3>مشروع درامي</h3>
+      <p>تطوير وإدارة عمل درامي طويل بمقاربة فنية وسردية مبتكرة.</p>
+    </div>
 
-  <a href="https://www.martc.live" target="_blank">
-    <i class="fa-solid fa-globe"></i>
-    www.martc.live
-  </a>
+    <div class="portfolio-item">
+      <h3>فيلم سينمائي</h3>
+      <p>إنتاج وإشراف فني على فيلم يعالج قضايا اجتماعية معاصرة.</p>
+    </div>
 
-  <div class="social-icons" style="margin-top:25px;">
-    <a href="https://linktr.ee/mansour.art.center" target="_blank" title="All My Links">
-      <i class="fa-solid fa-link"></i>
+    <div class="portfolio-item">
+      <h3>مشروع إعلامي</h3>
+      <p>إدارة مشروع إعلامي رقمي متعدد المنصات.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>التواصل</h2>
+  <div class="card contact">
+    <a href="https://wa.me/966XXXXXXXXX" target="_blank">
+      <span>📱 واتساب:</span> +966XXXXXXXXX
+    </a>
+
+    <a href="mailto:info@martc.live">
+      <span>📧 البريد:</span> info@martc.live
+    </a>
+
+    <a href="https://linktr.ee/mansour.art.center" target="_blank">
+      <span>🔗 روابطنا:</span> Linktree
+    </a>
+
+    <a href="https://www.martc.live" target="_blank">
+      <span>🌐 الموقع:</span> www.martc.live
     </a>
   </div>
 </section>
 
 <footer>
-  © 2026 MARTC – All Rights Reserved
+  © 2026 Mansour Art & Media Center — جميع الحقوق محفوظة
 </footer>
 
-<!-- WhatsApp Button -->
-<a href="https://wa.me/966508122281" class="whatsapp-float" target="_blank">
-  <i class="fa-brands fa-whatsapp"></i>
-</a>
+<script>
+  // Scroll smooth
+  document.querySelectorAll('nav a').forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(link.getAttribute('href'))
+        .scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+</script>
 
 </body>
 </html>

@@ -1,240 +1,250 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mansour Art & Media Center</title>
+<meta charset="UTF-8">
+<title>Mansour Ahmed Alsamti | Cinematic Portfolio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --main: #111;
-      --accent: #c59d5f;
-      --bg: #f5f5f5;
-      --white: #ffffff;
-    }
+<style>
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#0b0b0b;
+  color:#f2f2f2;
+  line-height:1.7;
+}
 
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+/* HERO */
+.hero-bg{
+  min-height:100vh;
+  background:
+    linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.85)),
+    url("hero.jpg") center/cover no-repeat;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
 
-    body {
-      font-family: "Tahoma", Arial, sans-serif;
-      background: var(--bg);
-      color: var(--main);
-      line-height: 1.8;
-    }
+.hero{
+  display:flex;
+  gap:50px;
+  max-width:1100px;
+  padding:40px;
+  align-items:center;
+}
 
-    header {
-      background: linear-gradient(135deg, #000, #222);
-      color: white;
-      padding: 80px 20px;
-      text-align: center;
-    }
+.hero img{
+  width:260px;
+  filter:grayscale(100%);
+  border-radius:6px;
+}
 
-    header h1 {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
+.hero-text h1{
+  margin:0;
+  font-size:38px;
+  letter-spacing:1px;
+}
 
-    header p {
-      font-size: 18px;
-      opacity: 0.9;
-    }
+.hero-text h2{
+  font-weight:normal;
+  font-size:17px;
+  color:#ccc;
+  margin-top:15px;
+}
 
-    nav {
-      margin-top: 30px;
-    }
+/* SECTIONS */
+section{
+  max-width:1100px;
+  margin:auto;
+  padding:70px 20px;
+  border-bottom:1px solid #1f1f1f;
+}
 
-    nav a {
-      color: white;
-      margin: 0 10px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
+h3{
+  color:#ff3c3c;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  margin-bottom:25px;
+}
 
-    nav a:hover {
-      color: var(--accent);
-    }
+p{color:#ddd;margin-bottom:15px;}
+ul{padding-left:20px;}
+li{margin-bottom:8px;}
 
-    section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
+/* EXPERIENCE */
+.job{margin-bottom:40px;}
+.job h4{margin:0;font-size:18px;}
+.job span{color:#aaa;font-size:14px;}
 
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 30px;
-      color: var(--accent);
-    }
+/* MOOD */
+.mood{
+  background:
+    linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.9)),
+    url("mood.jpg") center/cover no-repeat;
+}
 
-    .card {
-      background: var(--white);
-      padding: 30px;
-      margin-bottom: 20px;
-      border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-      transition: transform 0.3s;
-    }
+/* ART */
+.art{
+  text-align:center;
+}
+.art img{
+  max-width:420px;
+  width:100%;
+  margin-top:30px;
+}
 
-    .card:hover {
-      transform: translateY(-5px);
-    }
+/* FOOTER */
+footer{
+  background:#080808;
+  padding:50px 20px;
+  text-align:center;
+}
+footer a{
+  color:#ff3c3c;
+  text-decoration:none;
+  font-weight:bold;
+}
+footer p{
+  color:#777;
+  font-size:14px;
+  margin-top:10px;
+}
 
-    ul {
-      list-style: none;
-    }
-
-    ul li::before {
-      content: "✔";
-      margin-left: 10px;
-      color: var(--accent);
-    }
-
-    .portfolio {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .portfolio-item {
-      background: var(--white);
-      padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    }
-
-    .portfolio-item h3 {
-      margin-bottom: 10px;
-      color: var(--main);
-    }
-
-    .contact a {
-      display: block;
-      margin: 10px 0;
-      text-decoration: none;
-      color: var(--main);
-      font-weight: bold;
-    }
-
-    .contact a span {
-      color: var(--accent);
-    }
-
-    footer {
-      background: #000;
-      color: #ccc;
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 {
-        font-size: 32px;
-      }
-    }
-  </style>
+/* MOBILE */
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+  .hero img{
+    width:220px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-<header>
-  <h1>Mansour Art & Media Center</h1>
-  <p>إدارة مشاريع • إنتاج إعلامي • توجيه إبداعي</p>
-
-  <nav>
-    <a href="#about">من نحن</a>
-    <a href="#services">الخدمات</a>
-    <a href="#portfolio">الأعمال</a>
-    <a href="#contact">التواصل</a>
-  </nav>
-</header>
-
-<section id="about">
-  <h2>من نحن</h2>
-  <div class="card">
-    <p>
-      مركز منصور للفنون والإعلام هو منصة إبداعية متخصصة في إدارة المشاريع،
-      الإنتاج الإعلامي، والتطوير الفني. نعمل بخبرة طويلة على تحويل الأفكار
-      إلى أعمال احترافية ذات قيمة فنية وسوقية.
-    </p>
-  </div>
-</section>
-
-<section id="services">
-  <h2>الخدمات</h2>
-  <div class="card">
-    <ul>
-      <li>إدارة المشاريع الفنية والإعلامية</li>
-      <li>إنتاج الأفلام والمسلسلات</li>
-      <li>إدارة الاستوديوهات</li>
-      <li>التطوير الدرامي وكتابة المحتوى</li>
-      <li>الإشراف الفني والتوجيهي</li>
-    </ul>
-  </div>
-</section>
-
-<section id="portfolio">
-  <h2>الأعمال</h2>
-
-  <div class="portfolio">
-    <div class="portfolio-item">
-      <h3>مشروع درامي</h3>
-      <p>تطوير وإدارة عمل درامي طويل بمقاربة فنية وسردية مبتكرة.</p>
-    </div>
-
-    <div class="portfolio-item">
-      <h3>فيلم سينمائي</h3>
-      <p>إنتاج وإشراف فني على فيلم يعالج قضايا اجتماعية معاصرة.</p>
-    </div>
-
-    <div class="portfolio-item">
-      <h3>مشروع إعلامي</h3>
-      <p>إدارة مشروع إعلامي رقمي متعدد المنصات.</p>
+<!-- HERO -->
+<div class="hero-bg">
+  <div class="hero">
+    <img src="profile.jpg" alt="Mansour Ahmed Alsamti">
+    <div class="hero-text">
+      <h1>MANSOUR AHMED ALSAMTI</h1>
+      <h2>
+        Project Manager | Studio Manager | Sound Designer | Production<br>
+        Talent Management | Business Operations & Creative Development
+      </h2>
     </div>
   </div>
+</div>
+
+<!-- ABOUT -->
+<section>
+<h3>About</h3>
+<p>A multidisciplinary professional with 15+ years of experience across project management, studio operations, sound design, training leadership, business administration, exhibitions, product development, and entertainment production.</p>
+<p>Career spanning exhibitions, education & training, pharmaceuticals, insurance, tourism, and entertainment.</p>
+<p>Expert in building operational systems, leading creative teams, managing complex productions, and delivering high-quality sound and artistic output.</p>
 </section>
 
-<section id="contact">
-  <h2>التواصل</h2>
-  <div class="card contact">
-    <a href="https://wa.me/966XXXXXXXXX" target="_blank">
-      <span>📱 واتساب:</span> +966XXXXXXXXX
-    </a>
+<!-- EXPERIENCE -->
+<section>
+<h3>Experience</h3>
 
-    <a href="mailto:info@martc.live">
-      <span>📧 البريد:</span> info@martc.live
-    </a>
+<div class="job">
+<h4>Studio Manager & Lead Sound System Designer</h4>
+<span>3 Arts Studio | 2023</span>
+<ul>
+<li>Designed and implemented full recording, sound, and music production systems</li>
+<li>Managed studio operations, acoustics, scheduling, and workflows</li>
+<li>Supervised artists, engineers, and production teams</li>
+</ul>
+</div>
 
-    <a href="https://linktr.ee/mansour.art.center" target="_blank">
-      <span>🔗 روابطنا:</span> Linktree
-    </a>
+<div class="job">
+<h4>General Manager & Sound Engineer</h4>
+<span>Arts Center Talent & Production | 2021</span>
+<ul>
+<li>Led audio and production divisions</li>
+<li>Oversaw recording, mixing, mastering, and restoration</li>
+<li>Managed talent and equipment pipelines</li>
+</ul>
+</div>
 
-    <a href="https://www.martc.live" target="_blank">
-      <span>🌐 الموقع:</span> www.martc.live
-    </a>
-  </div>
+<div class="job">
+<h4>Development Manager</h4>
+<span>Join Me Destination Management | 2018–2021</span>
+<ul>
+<li>Developed tourism and entertainment experiences</li>
+<li>Managed partnerships, logistics, and event operations</li>
+</ul>
+</div>
+
+<div class="job">
+<h4>Claims & Fraud Specialist</h4>
+<span>Al Rajhi Takaful Insurance | 2018–2021</span>
+<ul>
+<li>Processed claims and compliance reports</li>
+<li>Identified and escalated fraud indicators</li>
+</ul>
+</div>
 </section>
 
+<!-- PROJECTS -->
+<section>
+<h3>Projects (2024–2025)</h3>
+<ul>
+<li>The Moaabal — Riyadh Theatre Festival (Music)</li>
+<li>Al-Sharbaqi — Theatre Festival (Music & Sound)</li>
+<li>ITHRA — Video Game Sound & Music</li>
+<li>NA ZH Animation — Ministry of Culture</li>
+<li>Short Film — MBC & Sadaf</li>
+<li>Salem’s Diary — Sim Siora Film</li>
+<li>Karate Series — MBC & ALSadaf (Shahid)</li>
+</ul>
+</section>
+
+<!-- MOOD -->
+<section class="mood">
+<h3>Sound as Identity</h3>
+<p>
+Night spaces, silence, neon lights, and tension.<br>
+Sound is not background — it is narrative, character, and memory.
+</p>
+</section>
+
+<!-- EDUCATION -->
+<section>
+<h3>Education & Training</h3>
+<ul>
+<li>Diploma — Secretarial Studies — Institute of Public Administration</li>
+<li>Diploma — Film Production — MBC Academy</li>
+<li>Diploma — Sound Design & Production Management — Misk</li>
+<li>Complete Cinematic Production & Entertainment Training (2024–2025)</li>
+</ul>
+</section>
+
+<!-- AWARDS -->
+<section>
+<h3>Awards</h3>
+<ul>
+<li>Best National Saudi Day Production</li>
+<li>Best Theatrical Music — Saudi Theatre Festival</li>
+</ul>
+</section>
+
+<!-- ART -->
+<section class="art">
+<h3>Art Identity</h3>
+<p>I'm not just producing sound — I’m shaping emotion.</p>
+<img src="art.jpg" alt="I'm ART">
+</section>
+
+<!-- FOOTER -->
 <footer>
-  © 2026 Mansour Art & Media Center — جميع الحقوق محفوظة
+<a href="https://linktr.ee/mansour.art.center" target="_blank">Contact Me</a>
+<p>© Mansour Ahmed Alsamti</p>
 </footer>
-
-<script>
-  // Scroll smooth
-  document.querySelectorAll('nav a').forEach(link => {
-    link.addEventListener('click', e => {
-      e.preventDefault();
-      document.querySelector(link.getAttribute('href'))
-        .scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-</script>
 
 </body>
 </html>
